@@ -1,19 +1,29 @@
-*{
+body{
     background-color: rgba(235,245,255,1);
 }
 
+h1{
+    color: rgb(114, 9, 9, 1);
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif ;
+    
+    position: sticky;
+    top: 20px;
+    left: 15px;;
+}
+
 .content_box {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     height: 750px;
-    width: 60%;
+    width: 60%; 
     margin-left: 20%;
-    margin-block-end: 5%;
+    margin-block-end: 2%;
     /*text-align: left; isn't needed since text is set to 50% width*/
     position: relative;
 
 }
-.gen_copy{
-    border: 2px solid blue;
+.welcome_copy{
+    /*border: 2px solid blue; */
 
     position: relative;
     width: 48%;
@@ -24,12 +34,12 @@
     
 }
 .gen_header{
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 
     width:64%;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
-    color: rgba(200, 100, 100);
+    color: rgba(200, 100, 100, 1);
 
     /*the following code was necessary to overlay the header to the box*/
     background-color: rgba(0,0,0,0);
@@ -55,4 +65,88 @@
     right: 0px;
     z-index: 0;
 
+}
+.pic_me{
+    height: 100%;
+    border-radius: 4%;
+}
+
+
+#stats{
+    font-size: 42px;
+    margin-left: 37.5%;
+    margin-top: 5%;
+}
+.stat_div{
+    border-radius: 4%;
+    padding: 1%;
+    background-color:rgba(187, 142, 224, .5);
+
+    width: 32%;
+    position: absolute;
+    top: 0px;
+    left: 1.5%;
+}
+.stat_sheet{
+    font-size: 24px;
+}
+tr{ 
+    color: white;
+}
+tr:nth-child(even) {
+    font-weight: bold;
+}
+
+.stat_div2{
+   /* border: 2px solid black; */
+
+    width: 48%;
+    height: 40%;
+    
+
+    position: absolute;
+    top: 15%;
+    right: 10%;
+}
+.category{
+    position: absolute;
+    font-size: 48px;
+    text-align: center;
+    color: rgba(200, 100, 100, 0.5);
+}
+#art{
+    
+    top: 0px;
+    left: 10%;
+}
+#pen{
+    
+    bottom: 0px;
+    right: 10%;
+
+}
+#play{
+    
+    bottom: 0px;
+    left: 10%;
+
+}
+#code{
+    
+    top: 0px;
+    right: 10%;
+
+}
+.stat_copy{
+   /* border: 2px solid blue; */
+
+    position: absolute;
+    left: 40%;
+    top: 60%;
+    width: 60%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: rgba(0,0,0,1);
+
+    transform: translate(0, -50px);
 }
